@@ -240,7 +240,7 @@ body {
           transition-delay: 0.4s;
 }
 .main-content__title {
-  font-size: 26px;
+  font-size: 22px;
   font-family: var(--italic-font);
   font-style: italic;
   margin-bottom: 14px;
