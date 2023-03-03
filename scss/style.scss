@@ -8,7 +8,7 @@
 	--reef-bg: #F47E52;
 	--arrow-fill: #333231;
 	--body-font: "Montserrat", sans-serif;
-	--italic-font: "EB Garamond", serif;
+	--italic-font: "Garamond", serif;
 }
 
 * {
@@ -111,7 +111,7 @@ body {
 
 	.menu-icon {
 		display: flex;
-		padding-top: 3em;
+		padding-top: 1em;
 		align-items: center;
 
 
@@ -228,8 +228,7 @@ body {
 }
 
 .main-wrapper {
-	margin-top: 1em;
-	padding-bottom: .5em;
+	padding-bottom: .2em;
 } 
 
 .main-content {
@@ -237,6 +236,7 @@ body {
 }
 
 .main-content__title {
+	font-weight: 400;
 	font-size: 2em;
 }
 
@@ -409,7 +409,7 @@ h1.main-title {
 			background-position: left bottom;
 
 			svg {
-				stroke: #fff;
+				stroke: #333231;
 			}
 		}
 	}
@@ -530,8 +530,8 @@ h1.main-title {
   }
   
   .splash-intro .logo {
-	width: 100px;
-	height: 100px;
+	width: 200px;
+	height: 200px;
 	display: grid;
 	place-items: center;
 	
@@ -566,7 +566,7 @@ h1.main-title {
 	display: inline-block;
 	padding: 12px 36px;
 	margin: 10px;
-	color: #243A40;
+	color: rgba(3, 39, 54, 1);
 	font-size: 1.4rem;
 	letter-spacing: 2px;
 	border-radius: 5px;
