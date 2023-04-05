@@ -116,24 +116,3 @@
 #section3 .contentblock-image {
     position: relative;
 }
-
-#section3 .character {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-}
-
-#section3.scroll-triggered[data-sectionstate="inactive"] {
-    .character {
-        transform: translate(-50%, 50%);
-    }
-}
-
-#section3.scroll-triggered[data-sectionstate="active"] {
-    .character {
-        transform: translate(-50%, -50%);
-        transition: all 1s ease-out .5s;
-    }
-}

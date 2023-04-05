@@ -43,7 +43,7 @@ p {
     position: sticky;
     top: 0;
     left: 0;
-    background-color: $color-accent-dark;
+    background-color: transparent;
     z-index: 6;
 
     @media (max-width: 575px) {

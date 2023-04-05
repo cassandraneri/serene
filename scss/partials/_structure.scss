@@ -43,9 +43,9 @@
     }
 }
 
-.site-main {
-    overflow-x: hidden;
-}
+// .site-main {
+//     overflow-x: hidden;
+// }
 
 
 section {
@@ -55,7 +55,8 @@ section {
 
 /* HERO SECTION */
 .hero {
-    background-color: $color-accent-dark;
+    background-color: transparent;
+    // background-color: $color-accent-dark;
     text-align: center;
     min-height: 101vh;
     color: $color-text-body-light;

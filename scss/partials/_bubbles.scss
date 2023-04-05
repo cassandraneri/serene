@@ -19,6 +19,9 @@
     height: 100%;
     overflow: hidden;
     position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
 }
 
 #radial {
@@ -195,15 +198,6 @@
     }
 }
 
-@-webkit-keyframes container-animation {
-    from {
-        margin-top: 100vh;
-    }
-
-    to {
-        margin-top: -100vh;
-    }
-}
 
 #particle2-container {
     position: fixed;
@@ -225,15 +219,6 @@
     }
 }
 
-@-webkit-keyframes container2-animation {
-    from {
-        margin-top: 100vh;
-    }
-
-    to {
-        margin-top: -100vh;
-    }
-}
 
 .particle,
 .particle2 {
@@ -451,8 +436,8 @@
         }
 
         #wrap {
-            width: 100%;
-            height: 100%;
+            width: 100vw;
+            height: 100vh;
             overflow: hidden;
         }
 
