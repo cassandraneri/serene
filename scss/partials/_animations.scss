@@ -51,7 +51,9 @@
 }
 
 /* ANIMATE SECTION 1 ON SCROLL */
+
 #section1.scroll-triggered[data-sectionstate="inactive"] {
+
     .contentblock-image {
         transform: translateX(-200px);
         opacity: 0;
@@ -64,6 +66,7 @@
 }
 
 #section1.scroll-triggered[data-sectionstate="active"] {
+
     .contentblock-image {
         opacity: 1;
         transform: translateX(0px);
@@ -80,8 +83,6 @@
 /* ANIMATE SECTION 2 ON SCROLL */
 #section2.scroll-triggered[data-sectionstate="inactive"] {
 
-    background-color: #888;
-
     .contentblock-image {
         transform: translateY(200px);
         opacity: 0;
@@ -95,7 +96,6 @@
 
 #section2.scroll-triggered[data-sectionstate="active"] {
 
-    background-color: #eee;
     transition: all 1s ease-out;
 
     .contentblock-image {
@@ -112,6 +112,12 @@
 }
 
 /* ANIMATE SECTION 3 ON SCROLL */
+
+#section3,
+#section3 h4 {
+    background-color: $color-text-headings;
+    color: black;
+}
 
 #section3 .contentblock-image {
     position: relative;

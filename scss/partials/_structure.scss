@@ -1,7 +1,6 @@
 /* SITE STRUCTURE */
 
 .site-header {
-    position: absolute;
     width: 100%;
     padding: 1em;
     display: flex;
@@ -18,7 +17,13 @@
     }
 
     a {
+        font-size: 1.2em;
         color: white;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $color-link;
         text-decoration: none;
     }
 
@@ -31,22 +36,22 @@
 
 /* SITE FOOTER */
 .site-footer {
-    background: $color-accent-dark;
+    background-color: $color-text-headings;
     color: white;
     display: flex;
     padding: 1em;
     justify-content: center;
 
     a {
-        color: white;
+        color: $color-accent-dark;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $color-link;
         text-decoration: none;
     }
 }
-
-// .site-main {
-//     overflow-x: hidden;
-// }
-
 
 section {
     display: flex;
@@ -71,4 +76,29 @@ section {
     p {
         margin: 1em auto;
     }
+}
+
+.hero-text {
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    min-width: 35em;
+    margin-top: 20em;
+}
+
+/* The hero image */
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/sanibell-bv-odL8iFce8TA-unsplash.jpg");
+
+    /* Set a specific height */
+    height: 101vh;
+    width: 101vw;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
