@@ -12,10 +12,6 @@
         align-items: center;
     }
 
-    .logomark {
-        margin-right: .7em;
-    }
-
     a {
         font-size: 1.2em;
         color: white;
@@ -36,14 +32,13 @@
 
 /* SITE FOOTER */
 .site-footer {
-    background-color: $color-text-headings;
+    background-color: transparent;
     color: white;
     display: flex;
-    padding: 1em;
     justify-content: center;
 
     a {
-        color: $color-accent-dark;
+        color: white;
         text-decoration: none;
     }
 
@@ -61,9 +56,8 @@ section {
 /* HERO SECTION */
 .hero {
     background-color: transparent;
-    // background-color: $color-accent-dark;
     text-align: center;
-    min-height: 101vh;
+    max-height: 99vh;
     color: $color-text-body-light;
     display: flex;
     align-items: center;
