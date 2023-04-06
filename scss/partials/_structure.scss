@@ -102,3 +102,25 @@ section {
     background-size: cover;
     position: relative;
 }
+
+// PRODUCT LIST
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    margin: 0;
+    padding: 10%;
+
+    li {
+        margin: 0;
+        padding: 0;
+        max-width: 40%;
+        list-style: none;
+        margin-bottom: 10%;
+
+        &:nth-child(even) {
+            margin-top: 10%;
+        }
+    }
+}
