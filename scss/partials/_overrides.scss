@@ -116,7 +116,7 @@ p {
 
 .btn {
     font-family: "mr-eaves-modern", sans-serif;
-    color: $color-accent;
+    color: white;
     position: relative;
     display: inline-block;
     padding: 12px 36px;
@@ -148,7 +148,7 @@ p {
             left: 0;
             width: 200px;
             height: 200px;
-            background: $color-link;
+            background: #b6d6c8a9;
             transition: 0.5s;
 
             &::before,
@@ -170,7 +170,7 @@ p {
 
             &::after {
                 border-radius: 40%;
-                background: white;
+                background: $color-link;
                 animation: liquidAnimation 10s linear infinite;
             }
 
@@ -189,7 +189,7 @@ p {
 
 .btn a {
     text-decoration: none;
-    color: $color-accent;
+    color: white;
 }
 
 
