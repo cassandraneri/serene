@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serene</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+    <!-- GOOGLE FONTS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Source+Serif+Pro&display=swap"
+        rel="stylesheet">
+
+    <!-- ADOBE FONTS -->
+    <link rel="stylesheet" href="https://use.typekit.net/hdl3plm.css">
+
+    <!-- MAIN CSS STYLES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="site-id">
+            <div class="logomark">
+                <a href="index.html"><img src="img/logo-01.png" alt="Serene Logo" width="100" height="100"></a>
+            </div>
+            <h1 class="hide-visually"><a href="index.html">Serene</a></h1>
+        </div>
+        <div class="header-menu">
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+        </div>
+
+        <nav class="site-nav" data-navstate="closed">
+
+            <button class="menu-button">
+                <div class="menu-button-text hide-visually">Menu</div>
+                <svg width="40" height="24" class="squish-x-animation">
+                    <rect id="menubar-top" x="0" y="0" width="35" height="2" />
+                    <rect id="menubar-mid" x="0" y="10" width="35" height="2" />
+                    <rect id="menubar-bot" x="0" y="20" width="35" height="2" />
+                </svg>
+            </button>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shops</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main class="site-main">
+
+        <section class="hero">
+
+            <div class="hero-image-about">
+                <div class="hero-text">
+                    <h1>Our Story</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga nihil iusto maxime et voluptatibus
+                        corrupti reprehenderit voluptatum, incidunt similique. Facilis adipisci, reprehenderit ea
+                        delectus quam autem unde molestias! Impedit dolorum veritatis quia, similique dolorem esse
+                        molestiae expedita neque ea! Architecto, reprehenderit quia quod velit dolorum ex maiores non
+                        praesentium facere.</p>
+                    <button class="btn btn--liquidBtn">
+                        <span><a href="shop.html">SHOP NOW</a></span>
+                        <div class="btn--liquidBtn--liquid">
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <div class="social-icons">
+
+            <ul class="socialmedia">
+                <li><a href="#" class="fab fa-linkedin">
+                    </a>
+                </li>
+                <li><a href="#" class="fab fa-instagram">
+                    </a>
+                </li>
+                <li><a href="#" class="fab fa-tiktok">
+                    </a>
+                </li>
+            </ul>
+
+            <div class="form">
+                <h4>Join the Serene Family</h4>
+                <p>Sign up and get the latest product launch news, community-only sales, giveaways, and
+                    promotions.
+                </p>
+
+                <form action="/action_page.php">
+                    <label for="fname">Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name"><br>
+
+                    <label for="lname">Email</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Email Address"><br>
+
+
+                    <a href="#" class="button">Subscribe!</a>
+                </form>
+            </div>
+        </div>
+
+
+    </main>
+
+
+    <!-- partial -->
+    <script src='https://unpkg.com/swiper/swiper-bundle.min.js'></script>
+    <script src="js/script.js"></script>
+
+    <!-- SMOOTH SCROLL BY CHRIS FERDINANDI https://github.com/cferdinandi/smooth-scroll -->
+    <script src="js/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 800,
+            speedAsDuration: true
+        });
+    </script>
+
+    <!-- MAIN JS SCRIPT.JS -->
+    <script src="js/script.js" defer></script>
+
+</body>
+
+</html>
