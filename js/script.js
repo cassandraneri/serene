@@ -29,4 +29,19 @@ document.addEventListener('DOMContentLoaded', function () {
         myobserver.observe(el);
     });
 
+    // OPEN JOIN NEWSLETTER
+    const newslettertogglebutton = document.querySelector('.newslettertoggle');
+
+    const newsletterform = document.querySelector('.form');
+    newslettertogglebutton.onclick = function () {
+        if (newsletterform.getAttribute('data-visible-state') === 'hidden') {
+            newsletterform.setAttribute('data-visible-state', 'visible');
+        } else {
+            newsletterform.setAttribute('data-visible-state', 'hidden');
+        };
+    };
+
 });
+
+
+

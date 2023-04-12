@@ -121,12 +121,12 @@ p {
     display: inline-block;
     padding: 12px 36px;
     font-size: 1.4rem;
-    border-radius: 5px;
     outline: none;
     border: none;
     cursor: pointer;
     text-transform: uppercase;
     box-sizing: border-box;
+    box-shadow: 0 0 1px 1px white;
 
     // liquid button
 
@@ -148,7 +148,6 @@ p {
             left: 0;
             width: 200px;
             height: 200px;
-            background: #b6d6c8a9;
             transition: 0.5s;
 
             &::before,
@@ -160,17 +159,20 @@ p {
                 width: 200%;
                 height: 200%;
                 transform: translate(-50%, -75%);
+                mix-blend-mode: difference;
+                z-index: 1;
             }
 
             &::before {
                 border-radius: 45%;
-                background: $color-link;
+                // background: $color-link;
                 animation: liquidAnimation 10s linear infinite;
             }
 
             &::after {
                 border-radius: 40%;
-                background: $color-link;
+                background: #888;
+                // background: $color-link;
                 animation: liquidAnimation 10s linear infinite;
             }
 
@@ -189,9 +191,8 @@ p {
 
 .btn a {
     text-decoration: none;
-    color: white;
+    color: #888;
 }
-
 
 /* UNDERWATER BACKGROUND */
 @import "partials/bubbles";
@@ -787,6 +788,18 @@ hr {
     color: white;
 }
 
+.wrapper .envelope:hover,
+.wrapper .envelope:hover .tooltip,
+.wrapper .envelope:hover .tooltip::before {
+    color: white;
+}
+
+.wrapper .close:hover,
+.wrapper .close:hover .tooltip,
+.wrapper .close:hover .tooltip::before {
+    color: white;
+}
+
 .social-icons {
     display: flex;
 }
@@ -861,7 +874,9 @@ hr {
     margin: 0 1em;
 }
 
-.fab {
+.fab,
+.fas,
+.fa {
     color: white;
     font-size: 1.6em;
     text-decoration: none;
@@ -891,6 +906,14 @@ hr {
     color: $color-link;
 }
 
+.fa-envelope:hover {
+    color: $color-link;
+}
+
+.fa-close:hover {
+    color: $color-link;
+}
+
 // FORM
 
 .form p {
@@ -906,4 +929,24 @@ hr {
             font-family: 'mr-eaves-modern', sans-serif;
         }
     }
+}
+
+.newsletter,
+.newslettertoggle {
+    background-color: transparent;
+    border: none;
+    list-style: none;
+    display: flex;
+    color: white;
+    // font-family: 'mr-eaves-modern', sans-serif;
+    // font-size: 1em;
+    // padding: 1em;
+}
+
+.newsletter .form[data-visible-state="hidden"] {
+    display: none;
+}
+
+.newsletter .form[data-visible-state="visible"] {
+    display: block;
 }

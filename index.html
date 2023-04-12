@@ -17,17 +17,18 @@
 
     <!-- MAIN CSS STYLES -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
-
+    <!-- 
     <div class="splash-intro">
         <div class="logo">
             <img src="img/logo-01.png" alt="logo">
         </div>
-    </div>
+    </div> -->
 
     <header class="site-header">
 
@@ -54,9 +55,9 @@
             </button>
 
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shops</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shops</a></li>
+                <li><a href="about.html">About</a></li>
             </ul>
 
         </nav>
@@ -96,25 +97,37 @@
                 </li>
             </ul>
 
-            <div class="form">
-                <h4>Join the Serene Family</h4>
-                <p>Sign up and get the latest product launch news, community-only sales, giveaways, and
-                    promotions.
-                </p>
+            <div class="newsletter">
 
-                <form action="/action_page.php">
-                    <label for="fname">Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name"><br>
+                <button class="newslettertoggle">
 
-                    <label for="lname">Email</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Email Address"><br>
+                    <ul class="socialmedia">
+                        <li><a href="#" class="fas fa-envelope" data-visible-state="hidden">
+                            </a>
+                        </li>
+                        <!-- <li><a href="#" class="fa fa-close"></a></li> -->
+                </button>
+
+                <div class="form" data-visible-state="hidden">
+                    <h4>Join the Serene Family</h4>
+                    <p>Sign up and get the latest product launch news, community-only sales, giveaways, and
+                        promotions.
+                    </p>
+
+                    <form action="/action_page.php">
+                        <label for="fname">Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name"><br>
+
+                        <label for="lname">Email</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Email Address"><br>
 
 
-                    <a href="#" class="button">Subscribe!</a>
-                </form>
+                        <a href="#" class="button">Subscribe!</a>
+                    </form>
+                    <li><a href="#" class="fa fa-close"></a></li>
+                </div>
             </div>
         </div>
-
 
     </main>
 
