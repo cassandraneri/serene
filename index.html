@@ -97,18 +97,10 @@
                 </li>
             </ul>
 
-            <div class="newsletter">
+            <div class="newsletter" data-visible-state="hidden">
 
-                <button class="newslettertoggle">
-
-                    <ul class="socialmedia">
-                        <li><a href="#" class="fas fa-envelope" data-visible-state="hidden">
-                            </a>
-                        </li>
-                        <!-- <li><a href="#" class="fa fa-close"></a></li> -->
-                </button>
-
-                <div class="form" data-visible-state="hidden">
+                <div class="form">
+                    <!-- <li><a href="#" class="fa fa-close"></a></li> -->
                     <h4>Join the Serene Family</h4>
                     <p>Sign up and get the latest product launch news, community-only sales, giveaways, and
                         promotions.
@@ -121,11 +113,16 @@
                         <label for="lname">Email</label>
                         <input type="text" id="lname" name="lastname" placeholder="Email Address"><br>
 
-
-                        <a href="#" class="button">Subscribe!</a>
+                        <input type="submit" value="Subscribe!">
                     </form>
-                    <li><a href="#" class="fa fa-close"></a></li>
                 </div>
+                <button class="newslettertoggle">
+
+                    <span class="fas fa-envelope">
+                    </span>
+                    <span class="fa fa-close"></span>
+                    <!-- <li><a href="#" class="fa fa-close"></a></li> -->
+                </button>
             </div>
         </div>
 

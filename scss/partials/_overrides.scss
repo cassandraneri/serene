@@ -115,18 +115,20 @@ p {
 // CUSTOM BUTTON
 
 .btn {
-    font-family: "mr-eaves-modern", sans-serif;
-    color: white;
     position: relative;
     display: inline-block;
-    padding: 12px 36px;
-    font-size: 1.4rem;
+    padding: .8em 2em;
+    margin: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 50px;
     outline: none;
-    border: none;
+    border: 1px solid white;
     cursor: pointer;
     text-transform: uppercase;
     box-sizing: border-box;
-    box-shadow: 0 0 1px 1px white;
+    background-color: transparent;
 
     // liquid button
 
@@ -148,6 +150,7 @@ p {
             left: 0;
             width: 200px;
             height: 200px;
+            /*   background: #4973ff; */
             transition: 0.5s;
 
             &::before,
@@ -159,22 +162,23 @@ p {
                 width: 200%;
                 height: 200%;
                 transform: translate(-50%, -75%);
-                mix-blend-mode: difference;
-                z-index: 1;
+                background-blend-mode: difference;
             }
 
             &::before {
                 border-radius: 45%;
-                // background: $color-link;
+                background: transparent;
+                /*   border: 30px solid white; */
+                box-shadow: 0 0 0 50px rgb(255 255 255 / .5);
                 animation: liquidAnimation 10s linear infinite;
             }
 
-            &::after {
-                border-radius: 40%;
-                background: #888;
-                // background: $color-link;
-                animation: liquidAnimation 10s linear infinite;
-            }
+            // &::after {
+            //     border-radius: 40%;
+            //     background: #888;
+            //     // background: $color-link;
+            //     animation: liquidAnimation 10s linear infinite;
+            // }
 
             @keyframes liquidAnimation {
                 0% {
@@ -191,7 +195,7 @@ p {
 
 .btn a {
     text-decoration: none;
-    color: #888;
+    color: white;
 }
 
 /* UNDERWATER BACKGROUND */
@@ -916,18 +920,39 @@ hr {
 
 // FORM
 
-.form p {
+.form {
     max-width: 20em;
     margin-bottom: .5em;
 
     h4 {
         margin-bottom: .5em;
         padding: 0;
+    }
 
-        label,
-        button {
-            font-family: 'mr-eaves-modern', sans-serif;
-        }
+    label,
+    input[type=text],
+    .button {
+        font-family: 'mr-eaves-modern', sans-serif;
+    }
+
+    input[type=submit] {
+        margin-top: 1em;
+        padding: .8em 1em;
+        border-radius: 50px;
+        font-family: 'mr-eaves-modern', sans-serif;
+        color: white;
+        background-color: $color-link;
+        border: none;
+    }
+
+    input[type=submit]:hover {
+        margin-top: 1em;
+        padding: .8em 1em;
+        border-radius: 50px;
+        font-family: 'mr-eaves-modern', sans-serif;
+        color: white;
+        background-color: $color-link-dark;
+        border: none;
     }
 }
 
@@ -936,17 +961,24 @@ hr {
     background-color: transparent;
     border: none;
     list-style: none;
-    display: flex;
     color: white;
     // font-family: 'mr-eaves-modern', sans-serif;
     // font-size: 1em;
     // padding: 1em;
 }
 
-.newsletter .form[data-visible-state="hidden"] {
+.newsletter[data-visible-state="hidden"] .form {
     display: none;
 }
 
-.newsletter .form[data-visible-state="visible"] {
+.newsletter[data-visible-state="visible"] .form {
     display: block;
+}
+
+.newsletter[data-visible-state="hidden"] .fa-close {
+    display: none;
+}
+
+.newsletter[data-visible-state="visible"] .fa-envelope {
+    display: none;
 }

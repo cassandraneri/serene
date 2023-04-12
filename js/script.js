@@ -32,12 +32,12 @@ document.addEventListener('DOMContentLoaded', function () {
     // OPEN JOIN NEWSLETTER
     const newslettertogglebutton = document.querySelector('.newslettertoggle');
 
-    const newsletterform = document.querySelector('.form');
+    const newsletter = document.querySelector('.newsletter');
     newslettertogglebutton.onclick = function () {
-        if (newsletterform.getAttribute('data-visible-state') === 'hidden') {
-            newsletterform.setAttribute('data-visible-state', 'visible');
+        if (newsletter.getAttribute('data-visible-state') === 'hidden') {
+            newsletter.setAttribute('data-visible-state', 'visible');
         } else {
-            newsletterform.setAttribute('data-visible-state', 'hidden');
+            newsletter.setAttribute('data-visible-state', 'hidden');
         };
     };
 
