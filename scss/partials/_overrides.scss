@@ -117,10 +117,10 @@ p {
 .btn {
     position: relative;
     display: inline-block;
-    padding: .8em 2em;
+    padding: .8em 3em;
     margin: 1em;
     font-size: 1em;
-    font-weight: bold;
+    font-weight: 100;
     color: #fff;
     border-radius: 50px;
     outline: none;
@@ -129,6 +129,7 @@ p {
     text-transform: uppercase;
     box-sizing: border-box;
     background-color: transparent;
+    z-index: 100;
 
     // liquid button
 
