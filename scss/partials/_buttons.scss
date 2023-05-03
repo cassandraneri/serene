@@ -6,13 +6,14 @@
     color: #fff;
     text-decoration: none;
     padding: 1em;
-    margin: 1em;
+    margin: 0 1em;
+    margin-bottom: 2.8em;
     width: 200px;
     border: none;
     border-radius: 50px;
 
     &:hover {
-        background-color: $color-link-dark;
+        background-color: $color-link;
     }
 
 }
