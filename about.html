@@ -91,22 +91,32 @@
                 </li>
             </ul>
 
-            <div class="form">
-                <h4>Join the Serene Family</h4>
-                <p>Sign up and get the latest product launch news, community-only sales, giveaways, and
-                    promotions.
-                </p>
+            <div class="newsletter" data-visible-state="hidden">
 
-                <form action="/action_page.php">
-                    <label for="fname">Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name"><br>
+                <div class="form">
+                    <!-- <li><a href="#" class="fa fa-close"></a></li> -->
+                    <h4>Join the Serene Family</h4>
+                    <p>Sign up and get the latest product launch news, community-only sales, giveaways, and
+                        promotions.
+                    </p>
 
-                    <label for="lname">Email</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Email Address"><br>
+                    <form action="/action_page.php">
+                        <label for="fname">Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name"><br>
 
+                        <label for="lname">Email</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Email Address"><br>
 
-                    <a href="#" class="button">Subscribe!</a>
-                </form>
+                        <input type="submit" value="Subscribe!">
+                    </form>
+                </div>
+                <button class="newslettertoggle">
+
+                    <span class="fas fa-envelope">
+                    </span>
+                    <span class="fa fa-close"></span>
+                    <!-- <li><a href="#" class="fa fa-close"></a></li> -->
+                </button>
             </div>
         </div>
 

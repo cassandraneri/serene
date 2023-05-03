@@ -87,8 +87,8 @@
 
             .menu-button {
                 position: fixed;
-                top: 1.9em;
-                right: 1.5em;
+                top: 3.1em;
+                right: 1.3em;
             }
 
             li {
@@ -183,7 +183,7 @@
             }
 
             100% {
-                transform: translate(-5px, 9px) rotate(30deg)
+                transform: translate(-6px, 13px) rotate(30deg)
             }
         }
 
@@ -197,7 +197,7 @@
             }
 
             100% {
-                transform: translate(-5px, -9px) rotate(-30deg);
+                transform: translate(-4px, -7px) rotate(-30deg);
             }
         }
 
